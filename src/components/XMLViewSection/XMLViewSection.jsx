@@ -22,10 +22,12 @@ export default class XMLViewSection extends React.Component {
           </Headline>
           <Tabs>
             <Tab title='Request'>
-
+              <textarea rows="4" cols="50">
+              </textarea>
             </Tab>
             <Tab title='Response'>
-
+              <textarea rows="4" cols="50">
+              </textarea>
             </Tab>
           </Tabs>
         </Section>

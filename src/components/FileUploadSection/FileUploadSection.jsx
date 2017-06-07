@@ -19,9 +19,7 @@ export default class FileUploadSection extends React.Component {
               Step 1
             </Headline>
             <Heading>Upload your File</Heading>
-            <FormField label='Upload Placeholder'>
-              <TextInput />
-            </FormField>
+            <input type="file" name="pic" accept="image/*"/>
           </Form>
         </Section>
     )
