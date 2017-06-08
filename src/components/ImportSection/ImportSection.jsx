@@ -27,7 +27,6 @@ export default class ImportSection extends React.Component {
           </Headline>
           <Button icon={<Deploy />}
             label='Send'
-            href='#'
             plain={false}
             critical={false}
             accent={false}

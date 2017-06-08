@@ -2,7 +2,7 @@ import React from 'react';
 import Section from 'grommet/components/Section';
 import Headline from 'grommet/components/Headline';
 import Box from 'grommet/components/Box';
-import Button from 'grommet/components/Button';
+import Anchor from 'grommet/components/Anchor';
 import Pulse from 'grommet/components/icons/Pulse';
 import LinkDown from 'grommet/components/icons/base/LinkDown';
 
@@ -19,9 +19,9 @@ export default class TeaserSection extends React.Component {
             </Headline>
             <Box pad='large'
               separator='top'>
-              <Button href='#1'>
+              <Anchor onClick={this.props.onClick}>
                 <Pulse icon={<LinkDown colorIndex="light-1" />} />
-              </Button>
+              </Anchor>
             </Box>
           </Section>
     )
