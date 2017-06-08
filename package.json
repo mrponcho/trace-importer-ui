@@ -22,6 +22,6 @@
   },
   "scripts": {
     "dev": "webpack -d --watch",
-    "build" : "webpack -p"
+    "build": "webpack -p"
   }
 }

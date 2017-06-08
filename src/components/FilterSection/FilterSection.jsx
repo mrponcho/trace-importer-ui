@@ -43,7 +43,7 @@ export default class FilterSection extends React.Component {
             </Box>
             <Box margin="small">
               <Label align='start' margin='none'>Invocation ID</Label>
-              <textarea rows="4" cols="50">
+              <textarea rows="8" cols="50">
               </textarea>
             </Box>
           </Form>
