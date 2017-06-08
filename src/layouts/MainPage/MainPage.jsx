@@ -8,6 +8,10 @@ import FilterSection from '../../components/FilterSection/FilterSection.jsx';
 
 
 export default class MainPage extends React.Component {
+  componentDidMount(){
+    
+  }
+
   render () {
     return (
         <Article scrollStep={true} alignSelf='stretch'>

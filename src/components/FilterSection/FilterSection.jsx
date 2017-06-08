@@ -1,11 +1,13 @@
 import React from 'react';
 import Section from 'grommet/components/Section';
 import Form from 'grommet/components/Form';
+import FormField from 'grommet/components/FormField';
 import Headline from 'grommet/components/Headline';
 import Heading from 'grommet/components/Heading';
 import Select from 'grommet/components/Select';
 import Box from 'grommet/components/Box';
 import Label from 'grommet/components/Label';
+import TextInput from 'grommet/components/TextInput';
 
 
 export default class FilterSection extends React.Component {
@@ -21,7 +23,7 @@ export default class FilterSection extends React.Component {
               Step 2
             </Headline>
             <Heading margin='small'>Chose your Filter</Heading>
-            <Box margin='none' colorIndex='light-1'>
+            <Box margin='none' >
               <Box margin="small">
                 <Label align='start' margin='none'>CRS Type</Label>
                 <Select placeHolder='CRS Type'
@@ -39,13 +41,10 @@ export default class FilterSection extends React.Component {
                    />
               </Box>
             </Box>
-            <Box>
-              <FormField>
-                <TextInput id='item1'
-                  name='item-1'
-                  value='one'
-                  />
-              </FormField>
+            <Box margin="small">
+              <Label align='start' margin='none'>Invocation ID</Label>
+              <textarea rows="8" cols="50">
+              </textarea>
             </Box>
           </Form>
         </Section>
