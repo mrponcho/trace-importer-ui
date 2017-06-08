@@ -5,9 +5,12 @@ import FormField from 'grommet/components/FormField';
 import Headline from 'grommet/components/Headline';
 import Heading from 'grommet/components/Heading';
 import Select from 'grommet/components/Select';
-import Box from 'grommet/components/Box';
 import Label from 'grommet/components/Label';
 import TextInput from 'grommet/components/TextInput';
+import Box from 'grommet/components/Box';
+import Anchor from 'grommet/components/Anchor';
+import Pulse from 'grommet/components/icons/Pulse';
+import LinkDown from 'grommet/components/icons/base/LinkDown';
 
 
 export default class FilterSection extends React.Component {
@@ -47,6 +50,12 @@ export default class FilterSection extends React.Component {
               </textarea>
             </Box>
           </Form>
+          <Box pad='small'
+            >
+            <Anchor onClick={this.props.onClick}>
+              <Pulse icon={<LinkDown colorIndex="light-1" />} />
+            </Anchor>
+          </Box>
         </Section>
     )
   }

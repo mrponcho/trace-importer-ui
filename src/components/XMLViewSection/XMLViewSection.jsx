@@ -7,6 +7,10 @@ import Headline from 'grommet/components/Headline';
 import Heading from 'grommet/components/Heading';
 import Tabs from 'grommet/components/Tabs';
 import Tab from 'grommet/components/Tab';
+import Box from 'grommet/components/Box';
+import Anchor from 'grommet/components/Anchor';
+import Pulse from 'grommet/components/icons/Pulse';
+import LinkDown from 'grommet/components/icons/base/LinkDown';
 
 export default class XMLViewSection extends React.Component {
   render () {
@@ -30,6 +34,11 @@ export default class XMLViewSection extends React.Component {
               </textarea>
             </Tab>
           </Tabs>
+          <Box pad='large'>
+            <Anchor onClick={this.props.onClick}>
+              <Pulse icon={<LinkDown colorIndex="light-1" />} />
+            </Anchor>
+          </Box>
         </Section>
 
     )

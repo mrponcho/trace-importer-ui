@@ -14,13 +14,11 @@ export default class MainPage extends React.Component {
     console.log(ReactDOM.findDOMNode(this.refs.test));
   }
 
+  // copied from Grommet Scroll
   scrollTo(componentFrom, componentTo){
     const rect = componentTo.getBoundingClientRect();
-    console.log(rect);
     Scroll.scrollBy(componentFrom, 'scrollTop', rect.top, ()=>{
-      console.log('Done Scrolling?');
     });
-    console.log(componentFrom['scrollTop']);
   }
 
   render () {
@@ -29,9 +27,15 @@ export default class MainPage extends React.Component {
           <TeaserSection ref = 'test' onClick={() =>{
               this.scrollTo(ReactDOM.findDOMNode(this.refs.main), ReactDOM.findDOMNode(this.refs.test1))
             }}></TeaserSection>
-          <FileUploadSection ref = 'test1' ></FileUploadSection>
-          <FilterSection></FilterSection>
-          <XMLViewSection></XMLViewSection>
+          <FileUploadSection ref = 'test1' onClick={() =>{
+              this.scrollTo(ReactDOM.findDOMNode(this.refs.main), ReactDOM.findDOMNode(this.refs.test2))
+            }}></FileUploadSection>
+          <FilterSection ref = 'test2' onClick={() =>{
+              this.scrollTo(ReactDOM.findDOMNode(this.refs.main), ReactDOM.findDOMNode(this.refs.test3))
+            }}></FilterSection>
+          <XMLViewSection ref = 'test3' onClick={() =>{
+              this.scrollTo(ReactDOM.findDOMNode(this.refs.main), ReactDOM.findDOMNode(this.refs.test4))
+            }}></XMLViewSection>
           <ImportSection ref='test4' onClick={() => {
               this.scrollTo(ReactDOM.findDOMNode(this.refs.main), ReactDOM.findDOMNode(this.refs.test))
             }}></ImportSection>
